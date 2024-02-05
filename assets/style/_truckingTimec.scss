@@ -1,0 +1,449 @@
+/*HEADER*/
+
+.header {
+  width: 1900px;
+  height: 1080px;
+  background-image: url(../images/daraxtli-yol.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__top {
+    background: rgba(0, 0, 0, 0.4);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logos {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    padding: 0 0 0 30px;
+  }
+  &__logos-group {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+  }
+  &__tel {
+    padding: 0 52px;
+  }
+  &__number {
+    color: rgb(243, 243, 243);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 130%;
+    text-align: left;
+    display: flex;
+    gap: 10px;
+  }
+  &__home {
+    display: flex;
+    gap: 40px;
+  }
+  &__home-ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  &__home-link {
+    color: rgb(243, 243, 243);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
+    &:hover {
+      color: rgb(241, 215, 135);
+    }
+  }
+  &__select {
+    background-color: transparent;
+    color: rgb(243, 243, 243);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: left;
+    border: none;
+    outline: none;
+
+    &:hover {
+      background-color: transparent;
+      color: rgb(241, 215, 135);
+    }
+  }
+  &__btn {
+    height: 100px;
+    width: 211px;
+    padding: 10px 15px 10px 15px;
+    background: rgb(106, 54, 156);
+    border: none;
+    &:hover {
+      background-color: rgb(43, 2, 81);
+    }
+    .btn__text {
+      color: rgb(243, 243, 243);
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 22px;
+      text-align: left;
+    }
+  }
+
+  .home {
+    margin: 100px 0 0 250px;
+
+    &__title {
+      color: rgb(243, 243, 243);
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 68px;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+    &__subtitle {
+      color: rgb(243, 243, 243);
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 130%;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+    &__btns {
+      padding: 40px 0;
+    }
+
+    &__btn {
+      width: 238px;
+      height: 46px;
+      background-color: transparent;
+      border-color: rgb(243, 243, 243);
+
+      &:hover {
+        background-color: rgb(243, 243, 243);
+        color: #000;
+      }
+
+      .home__btn-text {
+        color: rgb(243, 243, 243);
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-align: left;
+        width: 238px;
+        height: 46px;
+      }
+    }
+    &__fun {
+      color: rgb(243, 243, 243);
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 29px;
+      letter-spacing: 0%;
+      text-align: left;
+      margin: 100px 0 0 0;
+    }
+    .year {
+      display: flex;
+      gap: 50px;
+      padding: 0 0 30px 0;
+    }
+    &__num {
+      color: rgb(4, 255, 20);
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 29px;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+    &__year {
+      color: rgb(243, 243, 243);
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+    &__staff {
+      display: flex;
+      gap: 61px;
+    }
+    .staff__year {
+      color: rgb(243, 243, 243);
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+  }
+}
+
+/*HEADER*/
+
+/*MAIN*/
+
+.main {
+  &__section1 {
+    width: 1900px;
+    height: 570px;
+    background-color: rgb(33, 37, 41);
+    display: flex;
+  }
+  &__top1 {
+    padding: 63px 84px 0 250px;
+  }
+  &__title1 {
+    color: rgb(243, 243, 243);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+  }
+  &__subtitle1 {
+    color: rgb(243, 243, 243);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 130%;
+  }
+
+  &__read1 {
+    display: flex;
+    padding: 20px 0;
+  }
+  &__btn1 {
+    color: rgb(4, 255, 20);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+  }
+  &__top2 {
+    padding: 80px 0 0 136px;
+  }
+  &__section3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(39, 43, 48);
+    width: 1900px;
+    height: 763px;
+    gap: 30px;
+  }
+
+  &__card {
+    background: rgb(33, 37, 41);
+    width: 450px;
+    height: 523px;
+    .main__title1 {
+      padding: 0 30px 0 30px;
+    }
+    .main__subtitle1 {
+      padding: 0 30px 0 30px;
+    }
+    .main__img2 {
+      padding-left: 30px;
+    }
+    .main__img3 {
+      padding: 25px 30px 0 30px;
+    }
+  }
+  &__section4 {
+    background-image: url(../images/archali-yol.png);
+    width: 1900px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__top4 {
+    padding: 52px 250px;
+  }
+  &__title4 {
+    color: rgb(243, 243, 243);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  &__text4 {
+    color: rgb(243, 243, 243);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  &__subtitle4 {
+    color: rgb(243, 243, 243);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+}
+
+/*MAIN*/
+
+.value {
+  display: flex;
+  padding: 109px 0;
+  gap: 100px;
+  &__title {
+    color: rgb(243, 243, 243);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+
+  &__subtitle {
+    color: rgb(243, 243, 243);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+
+  ul {
+    list-style: square;
+    color: rgb(4, 255, 20);
+    border: none;
+    a {
+      color: rgb(243, 243, 243);
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 180%;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+  }
+}
+
+.carers {
+  width: 1400px;
+  height: 450px;
+  background: rgb(82, 31, 132);
+  display: flex;
+  margin: 0 250px;
+  &__top {
+    padding: 119px 120px 118px 120px;
+  }
+
+  &__title {
+    color: rgb(243, 243, 243);
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 180%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+
+  &__subtitle {
+    color: rgb(164, 102, 225);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 180%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  &__btn {
+    border: 2px solid rgb(243, 243, 243);
+    background-color: transparent;
+    width: 288px;
+    height: 46px;
+
+    &:hover {
+      background-color: rgb(243, 243, 243);
+      color: #000;
+    }
+    color: rgb(243, 243, 243);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+}
+
+.our {
+  color: rgb(243, 243, 243);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: center;
+  padding: 120px 0;
+}
+
+.logo__icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.maps {
+  padding: 150px 0 0 0;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px 340px 70px 250px;
+  &__logo {
+    display: flex;
+    gap: 10px;
+  }
+  &__title {
+    color: rgb(243, 243, 243);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+    padding: 0 0 0 45px;
+  }
+  &__text {
+    color: rgb(175, 175, 175);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  &__link {
+    color: rgb(243, 243, 243);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+    &:hover {
+      color: #af7706;
+    }
+  }
+}
+.end {
+  background-color: rgb(39, 43, 48);
+  display: flex;
+    width: 1900px;
+    justify-content: space-evenly;
+  height: 100px;
+  padding: 39px 250px;
+  &__top {
+    display: flex;
+    color: rgb(175, 175, 175);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+}
