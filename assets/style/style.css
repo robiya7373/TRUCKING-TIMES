@@ -61,17 +61,20 @@
   font-style: normal;
   font-display: swap;
 }
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat";
+  font-style: normal;
+}
+
+body {
   background-color: rgb(33, 37, 41);
 }
 
 .container {
-  max-width: 1140px;
-  width: 100%;
+  width: 1440px;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -87,7 +90,7 @@ ul {
 /*HEADER*/
 .header {
   width: 1900px;
-  height: 1080px;
+  height: auto;
   background-image: url(../images/daraxtli-yol.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -99,40 +102,38 @@ ul {
   align-items: center;
   justify-content: space-between;
 }
-.header__logos {
-  display: flex;
-  align-items: center;
+.header__img {
+  margin: 0 20px;
 }
 .header__logo {
-  padding: 0 0 0 30px;
-}
-.header__logos-group {
   display: flex;
   align-items: center;
-  gap: 18px;
+}
+.header__logo-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
 }
 .header__tel {
-  padding: 0 52px;
+  padding: 0 15px;
+  align-items: center;
 }
-.header__number {
+.header__num {
   color: rgb(243, 243, 243);
   font-size: 18px;
   font-weight: 500;
   line-height: 130%;
-  text-align: left;
+  text-align: center;
   display: flex;
   gap: 10px;
 }
-.header__home {
-  display: flex;
-  gap: 40px;
-}
-.header__home-ul {
+.header__right-ul {
   display: flex;
   align-items: center;
-  gap: 20px;
+  justify-content: space-evenly;
 }
-.header__home-link {
+.header__link {
   color: rgb(243, 243, 243);
   font-size: 18px;
   font-weight: 500;
@@ -140,7 +141,7 @@ ul {
   letter-spacing: 0%;
   text-align: left;
 }
-.header__home-link:hover {
+.header__link:hover {
   color: rgb(241, 215, 135);
 }
 .header__select {
@@ -157,27 +158,29 @@ ul {
   background-color: transparent;
   color: rgb(241, 215, 135);
 }
+.header .vector {
+  display: none;
+}
 .header__btn {
   height: 100px;
   width: 211px;
-  padding: 10px 15px 10px 15px;
   background: rgb(106, 54, 156);
   border: none;
-}
-.header__btn:hover {
-  background-color: rgb(43, 2, 81);
-}
-.header__btn .btn__text {
   color: rgb(243, 243, 243);
   font-size: 18px;
   font-weight: 500;
   line-height: 22px;
-  text-align: left;
+  text-align: center;
 }
-.header .home {
-  margin: 100px 0 0 250px;
+.header__btn:hover {
+  background-color: rgb(43, 2, 81);
+  color: azure;
 }
-.header .home__title {
+
+.hero {
+  margin: 100px 0 0 0;
+}
+.hero__title {
   color: rgb(243, 243, 243);
   font-size: 56px;
   font-weight: 800;
@@ -185,52 +188,44 @@ ul {
   letter-spacing: 0%;
   text-align: left;
 }
-.header .home__subtitle {
+.hero__subtitle {
   color: rgb(243, 243, 243);
   font-size: 20px;
   font-weight: 600;
   line-height: 130%;
   letter-spacing: 0%;
   text-align: left;
+  padding: 30px 0;
 }
-.header .home__btns {
-  padding: 40px 0;
-}
-.header .home__btn {
+.hero__btn {
   width: 238px;
   height: 46px;
   background-color: transparent;
   border-color: rgb(243, 243, 243);
-}
-.header .home__btn:hover {
-  background-color: rgb(243, 243, 243);
-  color: #000;
-}
-.header .home__btn .home__btn-text {
   color: rgb(243, 243, 243);
   font-size: 20px;
   font-weight: 600;
   line-height: 130%;
   letter-spacing: 0%;
-  text-align: left;
-  width: 238px;
-  height: 46px;
 }
-.header .home__fun {
+.hero__btn:hover {
+  background-color: rgb(243, 243, 243);
+  color: #000;
+}
+.hero__top {
+  display: flex;
+  gap: 35px;
+}
+.hero__title2 {
   color: rgb(243, 243, 243);
   font-size: 24px;
   font-weight: 700;
   line-height: 29px;
   letter-spacing: 0%;
   text-align: left;
-  margin: 100px 0 0 0;
+  padding: 100px 0 30px 0;
 }
-.header .home .year {
-  display: flex;
-  gap: 50px;
-  padding: 0 0 30px 0;
-}
-.header .home__num {
+.hero__num {
   color: rgb(4, 255, 20);
   font-size: 24px;
   font-weight: 700;
@@ -238,19 +233,21 @@ ul {
   letter-spacing: 0%;
   text-align: left;
 }
-.header .home__year {
+.hero__subtitle2 {
   color: rgb(243, 243, 243);
   font-size: 18px;
   font-weight: 500;
   line-height: 22px;
   letter-spacing: 0%;
   text-align: left;
+  padding: 0 0 30px 0;
 }
-.header .home__staff {
+.hero__staff {
   display: flex;
   gap: 61px;
+  padding: 0 0 322px 0;
 }
-.header .home .staff__year {
+.hero__staff-num {
   color: rgb(243, 243, 243);
   font-size: 18px;
   font-weight: 500;
@@ -263,18 +260,19 @@ ul {
 /*MAIN*/
 .main__section1 {
   width: 1900px;
-  height: 570px;
+  height: auto;
   background-color: rgb(33, 37, 41);
   display: flex;
 }
 .main__top1 {
-  padding: 63px 84px 0 250px;
+  margin: 139px 84px 0 136px;
 }
 .main__title1 {
   color: rgb(243, 243, 243);
   font-size: 24px;
   font-weight: 700;
   line-height: 29px;
+  padding: 0 0 20px 0;
 }
 .main__subtitle1 {
   color: rgb(243, 243, 243);
@@ -296,7 +294,7 @@ ul {
   border: none;
 }
 .main__top2 {
-  padding: 80px 0 0 136px;
+  margin: 139px 0 0 136px;
 }
 .main__section3 {
   display: flex;
@@ -304,35 +302,36 @@ ul {
   justify-content: center;
   background-color: rgb(39, 43, 48);
   width: 1900px;
-  height: 763px;
+  height: auto;
   gap: 30px;
 }
 .main__card {
   background: rgb(33, 37, 41);
   width: 450px;
-  height: 523px;
+  height: auto;
+  margin: 70px 0;
 }
 .main__card .main__title1 {
-  padding: 0 30px 0 30px;
+  padding: 30px 30px 0 30px;
 }
 .main__card .main__subtitle1 {
-  padding: 0 30px 0 30px;
+  padding: 30px 30px;
 }
 .main__card .main__img2 {
-  padding-left: 30px;
+  margin: 30px 30px 30px 30px;
 }
 .main__card .main__img3 {
-  padding: 25px 30px 0 30px;
+  margin: 40px 30px;
 }
 .main__section4 {
   background-image: url(../images/archali-yol.png);
   width: 1900px;
-  height: 400px;
+  height: auto;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .main__top4 {
-  padding: 52px 250px;
+  padding: 112px 250px;
 }
 .main__title4 {
   color: rgb(243, 243, 243);
@@ -360,10 +359,18 @@ ul {
 }
 
 /*MAIN*/
+/*VALUE*/
 .value {
+  width: 1900px;
+  height: auto;
   display: flex;
   padding: 109px 0;
   gap: 100px;
+}
+.value__tema {
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 0 0 365px;
 }
 .value__title {
   color: rgb(243, 243, 243);
@@ -397,7 +404,7 @@ ul {
 
 .carers {
   width: 1400px;
-  height: 450px;
+  height: auto;
   background: rgb(82, 31, 132);
   display: flex;
   margin: 0 250px;
@@ -438,6 +445,8 @@ ul {
   color: #000;
 }
 
+/*VALUE*/
+/*ICONS*/
 .our {
   color: rgb(243, 243, 243);
   font-size: 24px;
@@ -446,6 +455,10 @@ ul {
   letter-spacing: 0%;
   text-align: center;
   padding: 120px 0;
+}
+
+.icons {
+  width: 1900px;
 }
 
 .logo__icon {
@@ -458,15 +471,15 @@ ul {
   padding: 150px 0 0 0;
 }
 
+/*ICONS*/
+/*FOOTER*/
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 70px 340px 70px 250px;
+  width: 1900px;
+  height: auto;
 }
-.footer__logo {
+.footer__top {
   display: flex;
-  gap: 10px;
+  justify-content: space-evenly;
 }
 .footer__title {
   color: rgb(243, 243, 243);
@@ -475,9 +488,19 @@ ul {
   line-height: 130%;
   letter-spacing: 0%;
   text-align: left;
-  padding: 0 0 0 45px;
+  padding: 70px 0 15px 0;
 }
-.footer__text {
+.footer__img {
+  display: flex;
+  gap: 10px;
+}
+.footer__local {
+  display: flex;
+  justify-content: space-around;
+  padding: 75px 0 0 0;
+  gap: 150px;
+}
+.footer__subtitle {
   color: rgb(175, 175, 175);
   font-size: 18px;
   font-weight: 500;
@@ -493,24 +516,108 @@ ul {
   letter-spacing: 0%;
   text-align: left;
 }
-.footer__link:hover {
-  color: #af7706;
-}
 
 .end {
-  background-color: rgb(39, 43, 48);
+  height: auto;
+  background: rgb(39, 43, 48);
+  margin: 73px 0 0 0;
   display: flex;
-  width: 1900px;
-  justify-content: space-evenly;
-  height: 100px;
-  padding: 39px 250px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 145px 40px 160px;
 }
-.end__top {
-  display: flex;
+.end__ul {
   color: rgb(175, 175, 175);
   font-size: 18px;
   font-weight: 500;
   line-height: 22px;
   letter-spacing: 0%;
-  text-align: left;
+  text-align: center;
+  display: flex;
+  gap: 30px;
+}
+
+@media (max-width: 1152px) and (mix-width: 768px) {
+  .header {
+    font-size: 16px;
+  }
+  .header__right {
+    display: none;
+  }
+  .vector {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    width: auto;
+    height: auto;
+  }
+  .header__logo {
+    display: none;
+  }
+  .header__right {
+    display: none;
+  }
+  .vector {
+    display: block;
+    padding-right: 20px;
+  }
+  .hero {
+    height: auto;
+  }
+  .main__section1 {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+  }
+  .main__section3 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+  }
+  .main__card {
+    margin: 30px 30px;
+    width: auto;
+  }
+  .main__section4 {
+    height: auto;
+  }
+  .value {
+    width: auto;
+  }
+  .end {
+    flex-direction: none;
+  }
+}
+@media (max-width: 375px) {
+  .header {
+    width: auto;
+    height: auto;
+  }
+  .header__logo {
+    display: none;
+  }
+  .header__right {
+    display: none;
+  }
+  .header .vector {
+    display: block;
+  }
+  .header__btn {
+    display: none;
+  }
+  .hero {
+    width: auto;
+  }
+  .main__section1 {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+  }
+  .main__section3 {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */

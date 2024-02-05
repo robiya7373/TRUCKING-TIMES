@@ -1,13 +1,15 @@
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat";
- background-color:rgb(33, 37, 41);
+  font-style: normal;
+}
+body {
+  background-color: rgb(33, 37, 41);
 }
 .container {
-  max-width: 1140px;
-width: 100%;
+  width: 1440px;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -16,5 +18,4 @@ a {
 }
 ul {
   list-style: none;
-  
 }

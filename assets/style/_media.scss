@@ -1,0 +1,91 @@
+@media (max-width: 1152px) and  (mix-width:768px) {
+  
+  .header{
+    font-size: 16px;
+  }
+  .header__right {
+    display: none;
+   
+     }
+.vector{
+  display: block;
+}
+
+}
+
+@media (max-width:768px){
+.header{
+  width: auto;
+  height: auto;
+  &__logo{
+    display: none;
+  }
+  &__right{
+    display: none;
+  }
+}
+.vector{
+  display: block;
+  padding-right: 20px;
+}
+.hero{
+  height: auto;
+}
+.main__section1{
+  width: auto; height: auto;
+flex-direction: column;
+
+}
+.main__section3{
+  
+ display: grid;
+  grid-template-columns: repeat(2,minmax(0, 1fr));
+  gap: 30px;;
+}
+.main__card{
+  margin: 30px 30px;
+  width: auto;
+}
+.main__section4{
+  height: auto;
+}
+.value{
+  width: auto;
+}
+
+
+
+.end{
+  flex-direction: none;
+}
+}
+@media (max-width:375px){
+.header{
+width: auto;height: auto;
+&__logo{
+display: none;
+}
+&__right{
+display: none;}
+
+.vector{
+  display: block;
+}
+&__btn{
+  display: none;
+}
+}
+.hero{
+  width: auto;
+}
+.main__section1{
+  width: auto; height: auto;
+flex-direction: column;
+
+}
+.main__section3{
+  
+ display: grid;
+  grid-template-columns: repeat(1,minmax(0, 1fr));
+  gap: 30px;;
+}}

@@ -2,7 +2,7 @@
 
 .header {
   width: 1900px;
-  height: 1080px;
+  height: auto;
   background-image: url(../images/daraxtli-yol.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,41 +13,42 @@
     align-items: center;
     justify-content: space-between;
   }
-  &__logos {
-    display: flex;
-    align-items: center;
+
+  &__img {
+    margin: 0 20px ;
   }
   &__logo {
-    padding: 0 0 0 30px;
+    display: flex;
+
+    align-items: center;
   }
-  &__logos-group {
+
+  &__logo-group {
     display: flex;
     align-items: center;
-
-    gap: 18px;
+    justify-content: space-evenly;
+    gap: 10px;
   }
   &__tel {
-    padding: 0 52px;
+    padding: 0 15px;
+    align-items: center;
   }
-  &__number {
+  &__num {
     color: rgb(243, 243, 243);
     font-size: 18px;
     font-weight: 500;
     line-height: 130%;
-    text-align: left;
+    text-align: center;
     display: flex;
     gap: 10px;
   }
-  &__home {
-    display: flex;
-    gap: 40px;
-  }
-  &__home-ul {
+
+  &__right-ul {
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: space-evenly;
   }
-  &__home-link {
+  &__link {
     color: rgb(243, 243, 243);
     font-size: 18px;
     font-weight: 500;
@@ -73,104 +74,98 @@
       color: rgb(241, 215, 135);
     }
   }
+  .vector {
+    display: none;
+  }
   &__btn {
     height: 100px;
     width: 211px;
-    padding: 10px 15px 10px 15px;
     background: rgb(106, 54, 156);
     border: none;
+
+    color: rgb(243, 243, 243);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
     &:hover {
       background-color: rgb(43, 2, 81);
-    }
-    .btn__text {
-      color: rgb(243, 243, 243);
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 22px;
-      text-align: left;
+      color: azure;
     }
   }
+}
 
-  .home {
-    margin: 100px 0 0 250px;
+.hero {
+  margin: 100px 0 0 0;
 
-    &__title {
-      color: rgb(243, 243, 243);
-      font-size: 56px;
-      font-weight: 800;
-      line-height: 68px;
-      letter-spacing: 0%;
-      text-align: left;
+  &__title {
+    color: rgb(243, 243, 243);
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 68px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  &__subtitle {
+    color: rgb(243, 243, 243);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+    padding: 30px 0;
+  }
+  &__btn {
+    width: 238px;
+    height: 46px;
+    background-color: transparent;
+    border-color: rgb(243, 243, 243);
+    color: rgb(243, 243, 243);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0%;
+    &:hover {
+      background-color: rgb(243, 243, 243);
+      color: #000;
     }
-    &__subtitle {
-      color: rgb(243, 243, 243);
-      font-size: 20px;
-      font-weight: 600;
-      line-height: 130%;
-      letter-spacing: 0%;
-      text-align: left;
-    }
-    &__btns {
-      padding: 40px 0;
-    }
+  }
+  &__top {
+    display: flex;
+    gap: 35px;
+  }
+  &__title2 {
+    color: rgb(243, 243, 243);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding: 100px 0 30px 0;
+  }
 
-    &__btn {
-      width: 238px;
-      height: 46px;
-      background-color: transparent;
-      border-color: rgb(243, 243, 243);
-
-      &:hover {
-        background-color: rgb(243, 243, 243);
-        color: #000;
-      }
-
-      .home__btn-text {
-        color: rgb(243, 243, 243);
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 130%;
-        letter-spacing: 0%;
-        text-align: left;
-        width: 238px;
-        height: 46px;
-      }
-    }
-    &__fun {
-      color: rgb(243, 243, 243);
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 29px;
-      letter-spacing: 0%;
-      text-align: left;
-      margin: 100px 0 0 0;
-    }
-    .year {
-      display: flex;
-      gap: 50px;
-      padding: 0 0 30px 0;
-    }
-    &__num {
-      color: rgb(4, 255, 20);
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 29px;
-      letter-spacing: 0%;
-      text-align: left;
-    }
-    &__year {
-      color: rgb(243, 243, 243);
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 22px;
-      letter-spacing: 0%;
-      text-align: left;
-    }
-    &__staff {
-      display: flex;
-      gap: 61px;
-    }
-    .staff__year {
+  &__num {
+    color: rgb(4, 255, 20);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  &__subtitle2 {
+    color: rgb(243, 243, 243);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding: 0 0 30px 0;
+  }
+  &__staff {
+    display: flex;
+    gap: 61px;
+padding: 0 0 322px 0;
+    &-num {
       color: rgb(243, 243, 243);
       font-size: 18px;
       font-weight: 500;
@@ -188,18 +183,19 @@
 .main {
   &__section1 {
     width: 1900px;
-    height: 570px;
+    height: auto;
     background-color: rgb(33, 37, 41);
     display: flex;
   }
   &__top1 {
-    padding: 63px 84px 0 250px;
+    margin: 139px 84px 0 136px;
   }
   &__title1 {
     color: rgb(243, 243, 243);
     font-size: 24px;
     font-weight: 700;
     line-height: 29px;
+    padding: 0 0 20px 0;
   }
   &__subtitle1 {
     color: rgb(243, 243, 243);
@@ -222,7 +218,7 @@
     border: none;
   }
   &__top2 {
-    padding: 80px 0 0 136px;
+    margin: 139px 0 0 136px;
   }
   &__section3 {
     display: flex;
@@ -230,36 +226,39 @@
     justify-content: center;
     background-color: rgb(39, 43, 48);
     width: 1900px;
-    height: 763px;
+    height: auto;
     gap: 30px;
+    
   }
 
   &__card {
     background: rgb(33, 37, 41);
     width: 450px;
-    height: 523px;
+    height: auto;
+    margin: 70px 0;
     .main__title1 {
-      padding: 0 30px 0 30px;
+      padding:  30px 30px 0  30px;
     }
     .main__subtitle1 {
-      padding: 0 30px 0 30px;
+      padding: 30px  30px;
     }
-    .main__img2 {
-      padding-left: 30px;
+  
+    .main__img2{
+      margin: 30px 30px 30px 30px;
     }
-    .main__img3 {
-      padding: 25px 30px 0 30px;
+    .main__img3{
+      margin: 40px 30px;
     }
   }
   &__section4 {
     background-image: url(../images/archali-yol.png);
     width: 1900px;
-    height: 400px;
+    height: auto ;
     background-repeat: no-repeat;
     background-size: cover;
   }
   &__top4 {
-    padding: 52px 250px;
+    padding: 112px 250px;
   }
   &__title4 {
     color: rgb(243, 243, 243);
@@ -288,11 +287,18 @@
 }
 
 /*MAIN*/
-
+/*VALUE*/
 .value {
+  width: 1900px;
+  height: auto;
   display: flex;
   padding: 109px 0;
   gap: 100px;
+  &__tema {
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 0 0 365px;
+  }
   &__title {
     color: rgb(243, 243, 243);
     font-size: 36px;
@@ -328,7 +334,7 @@
 
 .carers {
   width: 1400px;
-  height: 450px;
+  height: auto;
   background: rgb(82, 31, 132);
   display: flex;
   margin: 0 250px;
@@ -372,7 +378,8 @@
     text-align: center;
   }
 }
-
+/*VALUE*/
+/*ICONS*/
 .our {
   color: rgb(243, 243, 243);
   font-size: 24px;
@@ -382,7 +389,9 @@
   text-align: center;
   padding: 120px 0;
 }
-
+.icons {
+  width: 1900px;
+}
 .logo__icon {
   display: flex;
   align-items: center;
@@ -391,15 +400,14 @@
 .maps {
   padding: 150px 0 0 0;
 }
-
+/*ICONS*/
+/*FOOTER*/
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 70px 340px 70px 250px;
-  &__logo {
+  width: 1900px;
+  height: auto;
+  &__top {
     display: flex;
-    gap: 10px;
+    justify-content: space-evenly;
   }
   &__title {
     color: rgb(243, 243, 243);
@@ -408,9 +416,19 @@
     line-height: 130%;
     letter-spacing: 0%;
     text-align: left;
-    padding: 0 0 0 45px;
+    padding: 70px 0 15px 0;
   }
-  &__text {
+  &__img {
+    display: flex;
+    gap: 10px;
+  }
+  &__local {
+    display: flex;
+    justify-content: space-around;
+    padding: 75px 0 0 0;
+    gap: 150px;
+  }
+  &__subtitle {
     color: rgb(175, 175, 175);
     font-size: 18px;
     font-weight: 500;
@@ -425,25 +443,24 @@
     line-height: 130%;
     letter-spacing: 0%;
     text-align: left;
-    &:hover {
-      color: #af7706;
-    }
   }
 }
 .end {
-  background-color: rgb(39, 43, 48);
+  height: auto;
+  background: rgb(39, 43, 48);
+  margin: 73px 0 0 0;
   display: flex;
-    width: 1900px;
-    justify-content: space-evenly;
-  height: 100px;
-  padding: 39px 250px;
-  &__top {
-    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 145px 40px 160px;
+  &__ul {
     color: rgb(175, 175, 175);
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
     letter-spacing: 0%;
-    text-align: left;
+    text-align: center;
+    display: flex;
+    gap: 30px;
   }
 }
